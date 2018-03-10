@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScrollSpy</title>
+    <link rel="stylesheet" href="../bootstrap_4.0/css/bootstrap.min.css">
+</head>
+<body>
+    <style>
+        .scrollspy-example{
+            position: relative;
+            overflow-y: scroll;
+            height: 150px;
+        }
+    </style>
+    <header> 
+            <div class="text-center mt-3">
+                <p class="font-weight-bold"> BOOTSTRAP 4.0 (UNA 2018)</p>
+            </div>
+           
+        </header>
+
+        <div class= "container">
+            <div class="row">
+                <div class="offset-md-3 col-sm-12 col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white card-title">ScrollSpy</div>
+                        <div class="card-body">
+                            <div id="list-example" class="list-group">
+                                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                                </div>
+                                <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                                <h4 id="list-item-1">Item 1</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate delectus quia quasi autem adipisci sequi, placeat, dolor nihil aperiam voluptas esse doloribus sint amet tempore. Nulla, dolore! Impedit, fugit modi.</p>
+                                <h4 id="list-item-2">Item 2</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tenetur perferendis debitis asperiores quia qui voluptates sequi perspiciatis architecto excepturi dolorum autem deleniti libero, dolores in rerum velit ex reiciendis!</p>
+                                <h4 id="list-item-3">Item 3</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni omnis commodi suscipit dignissimos dicta corrupti aliquam reiciendis minus nihil! Modi corporis quos vitae hic beatae quasi assumenda aspernatur mollitia quae.</p>
+                                <h4 id="list-item-4">Item 4</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem dolores veritatis quidem repellendus temporibus mollitia repellat eveniet voluptas error id, ipsum incidunt dignissimos rerum quod sed! Dicta, porro inventore?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer text-center">
+                            <a href="../index.html"><button class="btn btn-primary">Regresar</button></a>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+        <footer class="text-center mt-3">
+            <p class="font-weight-bold">Copyright by Universidad Nacional de Costa Rica
+                <br> 2018
+            </p>
+        </footer>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap_4.0/js/bootstrap.min.js"></script>
+    <script>
+        $('.scrollspy-example').scrollspy({ target: '#list-example' })
+    </script>
+</body>
+</html>
