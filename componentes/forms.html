@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORMS</title>
+    <link rel="stylesheet" href="../bootstrap_4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="text-center mt-3">
+            <p class="font-weight-bold"> BOOTSTRAP 4.0 (UNA 2018)</p>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-3 col-sm-12 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white card-title">FORMS</div>
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2">Simple form</h6>
+                        <p class="card-text">Be sure to use an appropriate type attribute on all inputs (e.g., email for email address or number
+                            for numerical information) to take advantage of newer input controls like email verification,
+                            number selection, and more.</p>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                        <h6 class="card-subtitle mb-3 mt-3">Form controls</h6>
+                        <p class="card-text">Textual form controls—like input, select, and textarea are styled with the .form-control class. Included
+                            are styles for general appearance, focus state, sizing, and more.</p>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Example select</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect2">Example multiple select</label>
+                                <select multiple class="form-control" id="exampleFormControlSelect2">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </form>
+
+                        <h6 class="card-subtitle mb-3 mt-3">Form file</h6>
+                        <p class="card-text">For file inputs, swap the .form-control for .form-control-file.</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Example file input</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                        </form>
+
+                        <h6 class="card-subtitle mb-3 mt-3">Form row</h6>
+
+                        <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress2">Address 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-2">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Check me out
+                                    </label>
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                              </form>
+
+
+                    </div>
+                    <div class="card-footer text-center">
+                            <a href='../index.html' class="btn btn-primary">Regresar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="text-center mt-3">
+            <p class="font-weight-bold">Copyright by Universidad Nacional de Costa Rica
+                <br> 2018
+            </p>
+        </footer>
+
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../bootstrap_4.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
