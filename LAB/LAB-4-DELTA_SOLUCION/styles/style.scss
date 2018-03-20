@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+$body-bg: #f3ffbd;
+$light-green: #b2dbbf;
+$dark-green: #70c1b3;
+$blue: #247ba0;
+$yellow: #f3ffbd;
+$red: #ff1654;
+$white: #fff;
+.container{
+    background-color: $white;
+}
+.nav-menu{
+    ul{
+        float: none;
+        @media (min-width: 768px){
+            float:right;
+        }
+        li{
+            width:100%;
+            @media (min-width: 768px){
+                width:150px;
+            }
+        }
+    }
+
+}
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: $body-bg;
+    .contents {
+        a{
+        color:$red;
+      }
+      img{
+        width: 30%;
+    }
+    }
+    ul{
+        li{
+            a{
+               // color:$white;
+            }
+        }
+    }
+
+    fieldset { 
+        width:100%;
+        padding: 1em;
+        margin-bottom: 1em;
+        border:1px solid $blue; 
+        input{
+            width:100%;
+        }
+    }
+
+    .btn{
+       // border-radius: 30em;
+    }
+    .btn-success{
+        background-color: $light-green;
+        border-color: $light-green;
+
+    }
+    .btn-outline-success{
+        background-color: $light-green;
+        border-color: $light-green;
+        color:$white;
+        &:hover{
+            background-color: $dark-green;
+            border-color: $dark-green;
+        }
+    }
+
+    .btn-primary{
+        background-color:$blue;
+        border-color:$blue;
+    }
+}
+
+.active-item{
+    background-color: $dark-green !important;
+    border-color: $dark-green !important;
+}
+.footer{
+    padding-bottom:1.5em;
+    ul{
+        li{
+            a{
+                color:$blue;
+            }
+        }
+    }
+}
