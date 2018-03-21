@@ -1,19 +1,19 @@
 $(document).ready(function () {
     loadContent('ajax/index.html');
-    $("#home").click(function () {
+    $("#link-home").click(function () {
         loadContent('ajax/index.html');
         resetActive();
-        $("#link-home").addClass("active");
+        $(this).addClass("active");
     });
-    $("#about").click(function () {
+    $("#link-about").click(function () {
         loadContent('ajax/about.html');
         resetActive();
-        $("#link-about").addClass("active");
+        $(this).addClass("active");
     });
-    $("#contact").click(function () {
+    $("#link-contact").click(function () {
         loadContent('ajax/contact-us.html');
         resetActive();
-        $("#link-contact").addClass("active");
+        $(this).addClass("active");
     });
 });
 
