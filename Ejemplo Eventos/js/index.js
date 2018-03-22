@@ -1,27 +1,32 @@
-$(document).ready(function(){
-    $("#onclick").click(function(){
+$(document).ready(function () {
+    $("#onclick").click(function () {
         alert("evento click");
     });
-    $("#change").change(function(){
+    $("#change").change(function () {
         alert("evento change");
     });
-    $("#blur").change(function(){
+    $("#blur").change(function () {
         alert("evento blur");
     });
-    $("#mouseenter").mouseenter(function(){
+    $("#mouseenter").mouseenter(function () {
         alert("evento mouseenter");
     });
-    $("#mouseenter").mouseout(function(){
+    $("#mouseenter").mouseout(function () {
         alert("evento mouseout");
     });
-    $("#btnFocus").click(function(){
+    $("#btnFocus").click(function () {
         $("#focus").focus();
     });
-    $("#btnContenido1").click(function(){
+    $("#btnContenido1").click(function () {
         loadContent('ajax/contenido1.html');
     });
-   $("#btnContenido2").click(function(){
+    $("#btnContenido2").click(function () {
         loadContent('ajax/contenido2.html');
+    });
+    $("#form").submit(function (event) {
+        if (!$(this).valid()) {
+            event.preventDefault();
+        }
     });
 });
 function loadContent(url) {
